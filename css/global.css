@@ -1,0 +1,16 @@
+/* Здесь хранятся общие css-элементы сайта */
+/* основные цвета */
+/* :root{} - псевдоэлемент, настройки которого применяются ко всему html-файлу */
+:root {
+    --backgroundColor: #FFB190;
+    --contentColor: #241916;
+    --accentColor: #040203;
+}
+
+/* подключаем шрифт */
+@font-face {
+    font-family: 'IBMplexsans';
+    src: url('/project 1/sweet_corner/source/fonts/Marck.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
