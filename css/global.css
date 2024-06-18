@@ -26,3 +26,6 @@ html {
     /* стиль шрифта */
     font-style: normal;
 }
+
+main,
+footer {}
