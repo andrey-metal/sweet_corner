@@ -2,15 +2,27 @@
 /* основные цвета */
 /* :root{} - псевдоэлемент, настройки которого применяются ко всему html-файлу */
 :root {
+    /* подключаем цвета */
     --backgroundColor: #FFB190;
     --contentColor: #241916;
     --accentColor: #040203;
+    /* подключаем шрифт */
+    /* font-family: 'Marck';*/
+}
+
+html {
+    /* :root и html - идентичны. Используй любой вариант */
+    font-family: 'Marck';
 }
 
 /* подключаем шрифт */
 @font-face {
-    font-family: 'IBMplexsans';
+    /* семейство шрифта */
+    font-family: 'Marck';
+    /* путь до ttf-образа шрифта */
     src: url('/project 1/sweet_corner/source/fonts/Marck.ttf') format('truetype');
+    /* начертание шрифта */
     font-weight: 400;
+    /* стиль шрифта */
     font-style: normal;
 }
