@@ -28,4 +28,8 @@ html {
 }
 
 main,
-footer {}
+footer {
+    /* отступы слева и справа */
+    padding-left: 10.625vw;
+    padding-right: 10.2083vw;
+}
