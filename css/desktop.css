@@ -3,10 +3,21 @@ header {
     /* ширина header */
     width: 100vw;
     height: 4.16667vw;
+    /* располагаем элементы в строчку */
     display: flex;
+    /* прижимаем элементы к краям сайта(левый и правый) по оси x */
     justify-content: space-between;
+    /* отступы элементов от краёв */
     padding-left: 1.5625vw;
     padding-right: 7.8125vw;
+    /* распологаем элементы по оси y в центре */
+    align-items: center;
+    /* цвет backgroundа(заливка) */
+    background-color: #0C0A0D;
 }
 
-#headerLogoBlock {}
+/* id левой стороны header */
+#headerLogoBlock {
+    width: 15.67708vw;
+    height: 3.125vw;
+}
