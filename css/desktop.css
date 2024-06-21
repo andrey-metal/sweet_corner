@@ -23,12 +23,23 @@ header {
     /* Отображаем все содержание элемента, даже за пределами установленной высоты и ширины
     (на случай если размер шрифта будет выходить за границу и корректно отображался(без скроллов)) */
     overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     /* мультиселектор sass css(для блока h2 и img) */
     &>h2 {
+        /* цвет шрифта */
         color: #FFB190;
-
+        /* размер шрифта(берём от vw) */
+        font-size: 1.82292vw;
+        /* пространство между символами(переводим из процентов 1% = 0.01em) */
+        letter-spacing: -0, 0015em;
     }
 
-    &>img {}
+    &>img {
+        object-fit: contain;
+        overflow: visible;
+        width: 3.125vw;
+    }
 }
