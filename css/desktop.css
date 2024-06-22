@@ -35,11 +35,25 @@ header {
         font-size: 1.82292vw;
         /* пространство между символами(переводим из процентов 1% = 0.01em) */
         letter-spacing: -0, 0015em;
+        overflow: visible;
+        /* для предотвращения взаимодействия с объектом(выделение) */
+        user-select: none;
     }
 
     &>img {
         object-fit: contain;
         overflow: visible;
         width: 3.125vw;
+        /* для предотвращения взаимодействия при нажатии и наведении */
+        pointer-events: none;
+        user-select: none;
     }
+}
+
+/* id правой стороны header */
+#headerMenuBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
 }
