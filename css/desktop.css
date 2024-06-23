@@ -52,8 +52,12 @@ header {
 
 /* id правой стороны header */
 #headerMenuBlock {
+    width: 29.0625vw;
     display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: visible;
+    justify-content: space-between;
+
+    &>div {
+        background-color: #FFB190;
+    }
 }
