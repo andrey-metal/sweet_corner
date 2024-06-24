@@ -1,4 +1,6 @@
 /* Здесь хранятся desktopные настройки css */
+
+/* настройка header */
 header {
     /* ширина header */
     width: 100vw;
@@ -16,6 +18,14 @@ header {
     background-color: #0C0A0D;
 }
 
+/* настройка main, footer */
+main,
+footer {
+    /* отступы слева и справа */
+    padding-left: 10.625vw;
+    padding-right: 10.2083vw;
+}
+
 /* id левой стороны header */
 #headerLogoBlock {
     width: 15.67708vw;
@@ -30,7 +40,7 @@ header {
     /* мультиселектор sass css(для блока h2 и img) */
     &>h2 {
         /* цвет шрифта */
-        color: #FFB190;
+        color: var(--backgroundColor);
         /* размер шрифта(берём от vw) */
         font-size: 1.82292vw;
         /* пространство между символами(переводим из процентов 1% = 0.01em) */
@@ -57,7 +67,38 @@ header {
     align-items: center;
     justify-content: space-between;
 
+    &>h2 {
+        /* цвет шрифта */
+        color: var(--backgroundColor);
+        /* размер текста */
+        font-size: 1.82292vw;
+        /* так как параметр насыщенности выстроен в global.css его можно здесь не указывать(для примера оставил) */
+        font-weight: 400;
+        /* при наведении на объект появляется курсор */
+        cursor: pointer;
+    }
+}
+
+/* картинка под header */
+#preview {
+    position: relative;
+    z-index: 0;
+    /* ширина картинки (100vw - весь экран) */
+    width: 100vw;
+    /* высота картинки */
+    height: 58.95833vw;
+
+    &>img {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: fill;
+    }
+
     &>div {
-        background-color: #FFB190;
+        z-index: 2;
     }
 }
